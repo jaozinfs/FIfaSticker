@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeStickerFragment">
+    <action android:id="@+id/open_menu"
+        app:destination="@id/menuFragment"/>
+    <fragment
+        android:id="@+id/homeStickerFragment"
+        android:name="com.example.stickerapp.presenter.sticker.HomeStickerFragment"
+        android:label="HomeStickerFragment"
+        tools:layout="@layout/fragment_home_sticker"/>
+    <dialog
+        android:id="@+id/menuFragment"
+        android:name="com.example.stickerapp.presenter.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu"/>
+</navigation>
